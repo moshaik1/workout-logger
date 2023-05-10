@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Dashboard from "./components/account/Dashboard";
 import Login from "./components/account/Login";
 import PrivateRoute from "./components/account/PrivateRoute";
+import ForgotPassword from "./components/account/ForgotPassword";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
               />
               <Route path="/signup" element={<Signup />} />
               <Route path="/login" element={<Login />} />
+              <Route path="/forgot-password" element={<ForgotPassword />} />
             </Routes>
           </AuthProvider>
         </Router>
