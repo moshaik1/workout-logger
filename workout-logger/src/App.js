@@ -8,6 +8,7 @@ import Dashboard from "./components/account/Dashboard";
 import Login from "./components/account/Login";
 import PrivateRoute from "./components/account/PrivateRoute";
 import ForgotPassword from "./components/account/ForgotPassword";
+import UpdateProfile from "./components/account/UpdateProfile";
 
 function App() {
   return (
@@ -25,6 +26,15 @@ function App() {
                 element={
                   <PrivateRoute>
                     <Dashboard />
+                  </PrivateRoute>
+                }
+              />
+
+              <Route
+                path="/update-profile"
+                element={
+                  <PrivateRoute>
+                    <UpdateProfile />
                   </PrivateRoute>
                 }
               />
